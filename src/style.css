@@ -1,0 +1,120 @@
+body {
+  background-color: #5682b4;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p,
+button {
+  margin: 0;
+  user-select: none;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 20px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+footer {
+  margin: 20px;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+.station-list {
+  margin: 20px auto;
+  width: 90%;
+  max-width: 800px;
+}
+
+.station-list--filter-selector {
+  text-align: center;
+}
+
+.station-list--filter-selector button {
+  width: 100px;
+  height: 100px;
+
+  border: none;
+  background-color: #f2f2f2;
+
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.station-list--filter-selector button.selected {
+  background-color: #4caf50;
+  color: white;
+}
+
+.station-list--filter-selector button:focus {
+  outline: 0;
+}
+
+.station {
+  color: #333;
+  font-size: 16px;
+
+  border-style: solid;
+  margin: 10px 0;
+  padding: 4px;
+
+  border-width: 1px;
+  border-color: #d8d8d8;
+  background: #f2f2f2;
+}
+
+.station:hover,
+.station.selected {
+  background: #d8d8d8;
+}
+
+.station--summary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.station--info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 150px;
+  flex-shrink: 0;
+}
+
+.station--name {
+  flex-shrink: 1;
+  overflow: hidden;
+}
+
+.station--address {
+  margin-top: 10px;
+}
+
+.station--bike-count.critical {
+  color: #de6736;
+}
